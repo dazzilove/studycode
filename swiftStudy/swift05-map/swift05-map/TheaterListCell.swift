@@ -10,6 +10,8 @@ import UIKit
 
 class TheaterListCell : UITableViewCell {
     
+    @IBOutlet var theaterImage: UIImageView!
+    
     @IBOutlet var name: UILabel!
     
     @IBOutlet var address: UILabel!

@@ -11,6 +11,7 @@ import UIKit
 class MovieListViewController : UITableViewController {
     
     var movieList : Array<MovieVO> = [];
+    @IBOutlet var movieTable: UITableView!
     
     override func viewDidLoad() {
         let testData = TestData()
@@ -34,6 +35,13 @@ class MovieListViewController : UITableViewController {
         cell.poster.image = UIImage(named: row.posterImageName!)
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "segue_movieDetail") {
+            let path = self.movieTable.indexPathForCell(sender as! MovieListCell)
+            (segue.destinationViewController as? MovieDetailViewController)?.movieVO = self.movieList[path!.row]
+        }
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

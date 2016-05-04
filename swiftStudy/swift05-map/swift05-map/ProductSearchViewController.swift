@@ -119,18 +119,7 @@ class ProductSearchViewController : UIViewController, UITableViewDataSource, UIT
             }
             
             for row in product {
-                /*
-                NSLog("product info = ")
-                NSLog("= ProductCode = \(row["ProductCode"] as? Int)")
-                NSLog("= ProductName = \(row["ProductName"] as? String)")
-                NSLog("= ProductPrice = \(row["ProductPrice"] as? Int)")
-                NSLog("= SalePrice = \(row["SalePrice"] as? Int)")
-                NSLog("= ProductImage = \(row["ProductImage"] as? String)")
-                NSLog("= DetailPageUrl = \(row["DetailPageUrl"] as? String)")
-                */
-                
-                let productVOTemp = ProductVO()
-                
+                let productVOTemp = ProductVO()                
                 productVOTemp.productCode = "\(row["ProductCode"] as! Int)"
                 productVOTemp.productName = row["ProductName"] as? String
                 productVOTemp.productPrice = "\(row["ProductPrice"] as! Int)"
@@ -158,6 +147,13 @@ class ProductSearchViewController : UIViewController, UITableViewDataSource, UIT
             productVO.productImage = UIImage(data: imageData!)
             
             return productVO.productImage!
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "segue_productDetail") {
+            let path = self.productTable.indexPathForCell(sender as! ProductListCell)
+            (segue.destinationViewController as? ProductDetailViewController)?.productVO = self.productList[path!.row]
         }
     }
     

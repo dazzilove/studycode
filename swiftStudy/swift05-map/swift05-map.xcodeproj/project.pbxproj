@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52362BA71CDA091A005A5DF9 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52362BA61CDA091A005A5DF9 /* ProductDetailViewController.swift */; };
+		52362BA91CDA0F7B005A5DF9 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52362BA81CDA0F7B005A5DF9 /* MovieDetailViewController.swift */; };
+		52362BAF1CDA205A005A5DF9 /* CGVchungdam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52362BAA1CDA205A005A5DF9 /* CGVchungdam.jpg */; };
+		52362BB01CDA205A005A5DF9 /* CGVgangnam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52362BAB1CDA205A005A5DF9 /* CGVgangnam.jpg */; };
+		52362BB11CDA205A005A5DF9 /* CGVmyeongdong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52362BAC1CDA205A005A5DF9 /* CGVmyeongdong.jpg */; };
+		52362BB21CDA205A005A5DF9 /* CGVsangam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52362BAD1CDA205A005A5DF9 /* CGVsangam.jpg */; };
+		52362BB31CDA205A005A5DF9 /* CGVyeouido.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52362BAE1CDA205A005A5DF9 /* CGVyeouido.jpg */; };
 		52A05E991CD2D3F500229518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05E981CD2D3F500229518 /* AppDelegate.swift */; };
 		52A05E9B1CD2D3F500229518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05E9A1CD2D3F500229518 /* ViewController.swift */; };
 		52A05E9E1CD2D3F500229518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A05E9C1CD2D3F500229518 /* Main.storyboard */; };
@@ -30,8 +37,6 @@
 		52ED5A791CD76C0200870153 /* StarWars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A751CD76C0200870153 /* StarWars.jpg */; };
 		52ED5A7A1CD76C0200870153 /* TheHatefulEight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A761CD76C0200870153 /* TheHatefulEight.jpg */; };
 		52ED5A7B1CD76C0200870153 /* TheRevenant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A771CD76C0200870153 /* TheRevenant.jpg */; };
-		52ED5A7D1CD76EA100870153 /* MovieListViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */; };
-		52ED5A7F1CD76F6900870153 /* MovieListCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */; };
 		52ED5A821CD8557D00870153 /* search2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A801CD8557D00870153 /* search2.png */; };
 		52ED5A831CD8557D00870153 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A811CD8557D00870153 /* search.png */; };
 		52ED5A851CD856F000870153 /* ProductVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A841CD856F000870153 /* ProductVO.swift */; };
@@ -57,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52362BA61CDA091A005A5DF9 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		52362BA81CDA0F7B005A5DF9 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		52362BAA1CDA205A005A5DF9 /* CGVchungdam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CGVchungdam.jpg; sourceTree = "<group>"; };
+		52362BAB1CDA205A005A5DF9 /* CGVgangnam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CGVgangnam.jpg; sourceTree = "<group>"; };
+		52362BAC1CDA205A005A5DF9 /* CGVmyeongdong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CGVmyeongdong.jpg; sourceTree = "<group>"; };
+		52362BAD1CDA205A005A5DF9 /* CGVsangam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CGVsangam.jpg; sourceTree = "<group>"; };
+		52362BAE1CDA205A005A5DF9 /* CGVyeouido.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CGVyeouido.jpg; sourceTree = "<group>"; };
 		52A05E951CD2D3F500229518 /* swift05-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift05-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A05E981CD2D3F500229518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A05E9A1CD2D3F500229518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,8 +98,6 @@
 		52ED5A751CD76C0200870153 /* StarWars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarWars.jpg; sourceTree = "<group>"; };
 		52ED5A761CD76C0200870153 /* TheHatefulEight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheHatefulEight.jpg; sourceTree = "<group>"; };
 		52ED5A771CD76C0200870153 /* TheRevenant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheRevenant.jpg; sourceTree = "<group>"; };
-		52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController2.swift; sourceTree = "<group>"; };
-		52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell2.swift; sourceTree = "<group>"; };
 		52ED5A801CD8557D00870153 /* search2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search2.png; sourceTree = "<group>"; };
 		52ED5A811CD8557D00870153 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		52ED5A841CD856F000870153 /* ProductVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVO.swift; sourceTree = "<group>"; };
@@ -147,9 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				52ED5A881CD858C500870153 /* ProductSearchViewController.swift */,
+				52362BA61CDA091A005A5DF9 /* ProductDetailViewController.swift */,
 				52A05EDE1CD2DC4200229518 /* TheaterListViewController.swift */,
 				52A05EDC1CD2DC1B00229518 /* MovieListViewController.swift */,
-				52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */,
+				52362BA81CDA0F7B005A5DF9 /* MovieDetailViewController.swift */,
 				52A05ED01CD2D60600229518 /* TheaterListCell.swift */,
 				52A05E981CD2D3F500229518 /* AppDelegate.swift */,
 				52A05ECE1CD2D54400229518 /* TheaterVO.swift */,
@@ -159,7 +170,6 @@
 				52ED5A861CD856F800870153 /* ProductListCell.swift */,
 				52A05ECC1CD2D48C00229518 /* MovieVO.swift */,
 				52A05ECA1CD2D48600229518 /* MovieListCell.swift */,
-				52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */,
 				52A05EC81CD2D47A00229518 /* TestData.swift */,
 				52A05E9F1CD2D3F500229518 /* Assets.xcassets */,
 				52A05EA11CD2D3F500229518 /* LaunchScreen.storyboard */,
@@ -215,6 +225,11 @@
 		52A05EE21CD31FA500229518 /* theaterPoster */ = {
 			isa = PBXGroup;
 			children = (
+				52362BAA1CDA205A005A5DF9 /* CGVchungdam.jpg */,
+				52362BAB1CDA205A005A5DF9 /* CGVgangnam.jpg */,
+				52362BAC1CDA205A005A5DF9 /* CGVmyeongdong.jpg */,
+				52362BAD1CDA205A005A5DF9 /* CGVsangam.jpg */,
+				52362BAE1CDA205A005A5DF9 /* CGVyeouido.jpg */,
 			);
 			name = theaterPoster;
 			sourceTree = "<group>";
@@ -326,16 +341,21 @@
 				52A05EDA1CD2D98800229518 /* theater2.png in Resources */,
 				52ED5A7A1CD76C0200870153 /* TheHatefulEight.jpg in Resources */,
 				52A05ED61CD2D94000229518 /* movie.png in Resources */,
+				52362BAF1CDA205A005A5DF9 /* CGVchungdam.jpg in Resources */,
 				52A05EA31CD2D3F500229518 /* LaunchScreen.storyboard in Resources */,
 				52A05ED71CD2D94000229518 /* theater.png in Resources */,
 				52A05EDB1CD2D98800229518 /* movie2.png in Resources */,
+				52362BB11CDA205A005A5DF9 /* CGVmyeongdong.jpg in Resources */,
 				52ED5A821CD8557D00870153 /* search2.png in Resources */,
 				52ED5A791CD76C0200870153 /* StarWars.jpg in Resources */,
+				52362BB21CDA205A005A5DF9 /* CGVsangam.jpg in Resources */,
 				52ED5A831CD8557D00870153 /* search.png in Resources */,
 				52ED5A7B1CD76C0200870153 /* TheRevenant.jpg in Resources */,
 				52A05EA01CD2D3F500229518 /* Assets.xcassets in Resources */,
 				52A05E9E1CD2D3F500229518 /* Main.storyboard in Resources */,
 				52ED5A781CD76C0200870153 /* MrRight.jpg in Resources */,
+				52362BB01CDA205A005A5DF9 /* CGVgangnam.jpg in Resources */,
+				52362BB31CDA205A005A5DF9 /* CGVyeouido.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +382,8 @@
 			files = (
 				52ED5A851CD856F000870153 /* ProductVO.swift in Sources */,
 				52A05ED11CD2D60600229518 /* TheaterListCell.swift in Sources */,
+				52362BA71CDA091A005A5DF9 /* ProductDetailViewController.swift in Sources */,
 				52A05EC91CD2D47A00229518 /* TestData.swift in Sources */,
-				52ED5A7F1CD76F6900870153 /* MovieListCell2.swift in Sources */,
 				52ED5A891CD858C500870153 /* ProductSearchViewController.swift in Sources */,
 				52A05E9B1CD2D3F500229518 /* ViewController.swift in Sources */,
 				52A05EDD1CD2DC1B00229518 /* MovieListViewController.swift in Sources */,
@@ -371,8 +391,8 @@
 				52A05ECB1CD2D48600229518 /* MovieListCell.swift in Sources */,
 				52ED5A871CD856F800870153 /* ProductListCell.swift in Sources */,
 				52A05E991CD2D3F500229518 /* AppDelegate.swift in Sources */,
+				52362BA91CDA0F7B005A5DF9 /* MovieDetailViewController.swift in Sources */,
 				52A05ECD1CD2D48C00229518 /* MovieVO.swift in Sources */,
-				52ED5A7D1CD76EA100870153 /* MovieListViewController2.swift in Sources */,
 				52A05ECF1CD2D54400229518 /* TheaterVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

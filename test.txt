@@ -1,1 +1,15 @@
-test
+
+        let theater1 = TheaterVO()
+        theater1.theaterID = "CGV002"
+        theater1.name = "CGV명동"
+        theater1.address1 = "서울특별시 중구 명동2가 83-5번지 눈스퀘어 8층"
+        theater1.address2 = "서울특별시 중구 명동길 14 (명동)"
+        theater1.latitude = 37.5634293
+        theater1.longitude = 126.9829224
+        theaterList.append(theater1)
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="462"> <tr> <td style="border:1px solid #cecece;"><a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5634293&lng=126.9829224&dlevel=12&searchCoord=126.9263499%3B37.5081334&query=7ISc7Jq47Yq567OE7IucIOykkeq1rCDrqoXrj5ky6rCAIDgzLTXrsojsp4Ag64iI7Iqk7YCY7Ja0IDjsuLU%3D&mpx=09590108%3A37.5081334%2C126.9263499%3AZ11%3A0.0218933%2C0.0191646&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1462363896121_456722554" width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> <tr> <td>  <table cellpadding="0" cellspacing="0" width="100%">  <tr>  <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;">   <span style="font-family: tahoma; font-size: 11px; color:#666;">2016.5.4</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5634293&lng=126.9829224&dlevel=12&searchCoord=126.9263499%3B37.5081334&query=7ISc7Jq47Yq567OE7IucIOykkeq1rCDrqoXrj5ky6rCAIDgzLTXrsojsp4Ag64iI7Iqk7YCY7Ja0IDjsuLU%3D&mpx=09590108%3A37.5081334%2C126.9263499%3AZ11%3A0.0218933%2C0.0191646&tab=1&enc=b64" target="_blank">지도 크게 보기</a>  </td>  <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;">   <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="http://www.nhncorp.com" target="_blank">NAVER Corp.</a></span>  </td>  </tr>  </table> </td> </tr>  </table>
