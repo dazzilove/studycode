@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52A05E991CD2D3F500229518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05E981CD2D3F500229518 /* AppDelegate.swift */; };
+		52A05E9B1CD2D3F500229518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05E9A1CD2D3F500229518 /* ViewController.swift */; };
+		52A05E9E1CD2D3F500229518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A05E9C1CD2D3F500229518 /* Main.storyboard */; };
+		52A05EA01CD2D3F500229518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A05E9F1CD2D3F500229518 /* Assets.xcassets */; };
+		52A05EA31CD2D3F500229518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A05EA11CD2D3F500229518 /* LaunchScreen.storyboard */; };
+		52A05EAE1CD2D3F500229518 /* swift05_mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05EAD1CD2D3F500229518 /* swift05_mapTests.swift */; };
+		52A05EB91CD2D3F500229518 /* swift05_mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05EB81CD2D3F500229518 /* swift05_mapUITests.swift */; };
+		52A05EC71CD2D41200229518 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A05EC61CD2D41200229518 /* MapKit.framework */; };
+		52A05EC91CD2D47A00229518 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05EC81CD2D47A00229518 /* TestData.swift */; };
+		52A05ECB1CD2D48600229518 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05ECA1CD2D48600229518 /* MovieListCell.swift */; };
+		52A05ECD1CD2D48C00229518 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05ECC1CD2D48C00229518 /* MovieVO.swift */; };
+		52A05ECF1CD2D54400229518 /* TheaterVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05ECE1CD2D54400229518 /* TheaterVO.swift */; };
+		52A05ED11CD2D60600229518 /* TheaterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05ED01CD2D60600229518 /* TheaterListCell.swift */; };
+		52A05ED61CD2D94000229518 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A05ED41CD2D94000229518 /* movie.png */; };
+		52A05ED71CD2D94000229518 /* theater.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A05ED51CD2D94000229518 /* theater.png */; };
+		52A05EDA1CD2D98800229518 /* theater2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A05ED81CD2D98800229518 /* theater2.png */; };
+		52A05EDB1CD2D98800229518 /* movie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A05ED91CD2D98800229518 /* movie2.png */; };
+		52A05EDD1CD2DC1B00229518 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05EDC1CD2DC1B00229518 /* MovieListViewController.swift */; };
+		52A05EDF1CD2DC4200229518 /* TheaterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A05EDE1CD2DC4200229518 /* TheaterListViewController.swift */; };
+		52ED5A781CD76C0200870153 /* MrRight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A741CD76C0200870153 /* MrRight.jpg */; };
+		52ED5A791CD76C0200870153 /* StarWars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A751CD76C0200870153 /* StarWars.jpg */; };
+		52ED5A7A1CD76C0200870153 /* TheHatefulEight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A761CD76C0200870153 /* TheHatefulEight.jpg */; };
+		52ED5A7B1CD76C0200870153 /* TheRevenant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A771CD76C0200870153 /* TheRevenant.jpg */; };
+		52ED5A7D1CD76EA100870153 /* MovieListViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */; };
+		52ED5A7F1CD76F6900870153 /* MovieListCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */; };
+		52ED5A821CD8557D00870153 /* search2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A801CD8557D00870153 /* search2.png */; };
+		52ED5A831CD8557D00870153 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 52ED5A811CD8557D00870153 /* search.png */; };
+		52ED5A851CD856F000870153 /* ProductVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A841CD856F000870153 /* ProductVO.swift */; };
+		52ED5A871CD856F800870153 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A861CD856F800870153 /* ProductListCell.swift */; };
+		52ED5A891CD858C500870153 /* ProductSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED5A881CD858C500870153 /* ProductSearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52A05EAA1CD2D3F500229518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A05E8D1CD2D3F500229518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A05E941CD2D3F500229518;
+			remoteInfo = "swift05-map";
+		};
+		52A05EB51CD2D3F500229518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A05E8D1CD2D3F500229518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A05E941CD2D3F500229518;
+			remoteInfo = "swift05-map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52A05E951CD2D3F500229518 /* swift05-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift05-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A05E981CD2D3F500229518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52A05E9A1CD2D3F500229518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52A05E9D1CD2D3F500229518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52A05E9F1CD2D3F500229518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52A05EA21CD2D3F500229518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52A05EA41CD2D3F500229518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A05EA91CD2D3F500229518 /* swift05-mapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift05-mapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A05EAD1CD2D3F500229518 /* swift05_mapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift05_mapTests.swift; sourceTree = "<group>"; };
+		52A05EAF1CD2D3F500229518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A05EB41CD2D3F500229518 /* swift05-mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift05-mapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A05EB81CD2D3F500229518 /* swift05_mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift05_mapUITests.swift; sourceTree = "<group>"; };
+		52A05EBA1CD2D3F500229518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A05EC61CD2D41200229518 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		52A05EC81CD2D47A00229518 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		52A05ECA1CD2D48600229518 /* MovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
+		52A05ECC1CD2D48C00229518 /* MovieVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		52A05ECE1CD2D54400229518 /* TheaterVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterVO.swift; sourceTree = "<group>"; };
+		52A05ED01CD2D60600229518 /* TheaterListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterListCell.swift; sourceTree = "<group>"; };
+		52A05ED41CD2D94000229518 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		52A05ED51CD2D94000229518 /* theater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theater.png; sourceTree = "<group>"; };
+		52A05ED81CD2D98800229518 /* theater2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theater2.png; sourceTree = "<group>"; };
+		52A05ED91CD2D98800229518 /* movie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie2.png; sourceTree = "<group>"; };
+		52A05EDC1CD2DC1B00229518 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		52A05EDE1CD2DC4200229518 /* TheaterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterListViewController.swift; sourceTree = "<group>"; };
+		52ED5A741CD76C0200870153 /* MrRight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MrRight.jpg; sourceTree = "<group>"; };
+		52ED5A751CD76C0200870153 /* StarWars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarWars.jpg; sourceTree = "<group>"; };
+		52ED5A761CD76C0200870153 /* TheHatefulEight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheHatefulEight.jpg; sourceTree = "<group>"; };
+		52ED5A771CD76C0200870153 /* TheRevenant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheRevenant.jpg; sourceTree = "<group>"; };
+		52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController2.swift; sourceTree = "<group>"; };
+		52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell2.swift; sourceTree = "<group>"; };
+		52ED5A801CD8557D00870153 /* search2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search2.png; sourceTree = "<group>"; };
+		52ED5A811CD8557D00870153 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		52ED5A841CD856F000870153 /* ProductVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVO.swift; sourceTree = "<group>"; };
+		52ED5A861CD856F800870153 /* ProductListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		52ED5A881CD858C500870153 /* ProductSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSearchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A05E921CD2D3F500229518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A05EC71CD2D41200229518 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EA61CD2D3F500229518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EB11CD2D3F500229518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A05E8C1CD2D3F500229518 = {
+			isa = PBXGroup;
+			children = (
+				52A05ED31CD2D87900229518 /* resources */,
+				52A05EC61CD2D41200229518 /* MapKit.framework */,
+				52A05E971CD2D3F500229518 /* swift05-map */,
+				52A05EAC1CD2D3F500229518 /* swift05-mapTests */,
+				52A05EB71CD2D3F500229518 /* swift05-mapUITests */,
+				52A05E961CD2D3F500229518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52A05E961CD2D3F500229518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A05E951CD2D3F500229518 /* swift05-map.app */,
+				52A05EA91CD2D3F500229518 /* swift05-mapTests.xctest */,
+				52A05EB41CD2D3F500229518 /* swift05-mapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A05E971CD2D3F500229518 /* swift05-map */ = {
+			isa = PBXGroup;
+			children = (
+				52ED5A881CD858C500870153 /* ProductSearchViewController.swift */,
+				52A05EDE1CD2DC4200229518 /* TheaterListViewController.swift */,
+				52A05EDC1CD2DC1B00229518 /* MovieListViewController.swift */,
+				52ED5A7C1CD76EA100870153 /* MovieListViewController2.swift */,
+				52A05ED01CD2D60600229518 /* TheaterListCell.swift */,
+				52A05E981CD2D3F500229518 /* AppDelegate.swift */,
+				52A05ECE1CD2D54400229518 /* TheaterVO.swift */,
+				52A05E9A1CD2D3F500229518 /* ViewController.swift */,
+				52A05E9C1CD2D3F500229518 /* Main.storyboard */,
+				52ED5A841CD856F000870153 /* ProductVO.swift */,
+				52ED5A861CD856F800870153 /* ProductListCell.swift */,
+				52A05ECC1CD2D48C00229518 /* MovieVO.swift */,
+				52A05ECA1CD2D48600229518 /* MovieListCell.swift */,
+				52ED5A7E1CD76F6900870153 /* MovieListCell2.swift */,
+				52A05EC81CD2D47A00229518 /* TestData.swift */,
+				52A05E9F1CD2D3F500229518 /* Assets.xcassets */,
+				52A05EA11CD2D3F500229518 /* LaunchScreen.storyboard */,
+				52A05EA41CD2D3F500229518 /* Info.plist */,
+			);
+			path = "swift05-map";
+			sourceTree = "<group>";
+		};
+		52A05EAC1CD2D3F500229518 /* swift05-mapTests */ = {
+			isa = PBXGroup;
+			children = (
+				52A05EAD1CD2D3F500229518 /* swift05_mapTests.swift */,
+				52A05EAF1CD2D3F500229518 /* Info.plist */,
+			);
+			path = "swift05-mapTests";
+			sourceTree = "<group>";
+		};
+		52A05EB71CD2D3F500229518 /* swift05-mapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52A05EB81CD2D3F500229518 /* swift05_mapUITests.swift */,
+				52A05EBA1CD2D3F500229518 /* Info.plist */,
+			);
+			path = "swift05-mapUITests";
+			sourceTree = "<group>";
+		};
+		52A05ED31CD2D87900229518 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				52ED5A801CD8557D00870153 /* search2.png */,
+				52ED5A811CD8557D00870153 /* search.png */,
+				52A05EE21CD31FA500229518 /* theaterPoster */,
+				52A05EE01CD31F7000229518 /* moviePoster */,
+				52A05ED81CD2D98800229518 /* theater2.png */,
+				52A05ED91CD2D98800229518 /* movie2.png */,
+				52A05ED41CD2D94000229518 /* movie.png */,
+				52A05ED51CD2D94000229518 /* theater.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		52A05EE01CD31F7000229518 /* moviePoster */ = {
+			isa = PBXGroup;
+			children = (
+				52ED5A741CD76C0200870153 /* MrRight.jpg */,
+				52ED5A751CD76C0200870153 /* StarWars.jpg */,
+				52ED5A761CD76C0200870153 /* TheHatefulEight.jpg */,
+				52ED5A771CD76C0200870153 /* TheRevenant.jpg */,
+			);
+			name = moviePoster;
+			sourceTree = "<group>";
+		};
+		52A05EE21CD31FA500229518 /* theaterPoster */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = theaterPoster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A05E941CD2D3F500229518 /* swift05-map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A05EBD1CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-map" */;
+			buildPhases = (
+				52A05E911CD2D3F500229518 /* Sources */,
+				52A05E921CD2D3F500229518 /* Frameworks */,
+				52A05E931CD2D3F500229518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift05-map";
+			productName = "swift05-map";
+			productReference = 52A05E951CD2D3F500229518 /* swift05-map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52A05EA81CD2D3F500229518 /* swift05-mapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A05EC01CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-mapTests" */;
+			buildPhases = (
+				52A05EA51CD2D3F500229518 /* Sources */,
+				52A05EA61CD2D3F500229518 /* Frameworks */,
+				52A05EA71CD2D3F500229518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A05EAB1CD2D3F500229518 /* PBXTargetDependency */,
+			);
+			name = "swift05-mapTests";
+			productName = "swift05-mapTests";
+			productReference = 52A05EA91CD2D3F500229518 /* swift05-mapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52A05EB31CD2D3F500229518 /* swift05-mapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A05EC31CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-mapUITests" */;
+			buildPhases = (
+				52A05EB01CD2D3F500229518 /* Sources */,
+				52A05EB11CD2D3F500229518 /* Frameworks */,
+				52A05EB21CD2D3F500229518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A05EB61CD2D3F500229518 /* PBXTargetDependency */,
+			);
+			name = "swift05-mapUITests";
+			productName = "swift05-mapUITests";
+			productReference = 52A05EB41CD2D3F500229518 /* swift05-mapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A05E8D1CD2D3F500229518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = SwiftBook;
+				TargetAttributes = {
+					52A05E941CD2D3F500229518 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					52A05EA81CD2D3F500229518 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 52A05E941CD2D3F500229518;
+					};
+					52A05EB31CD2D3F500229518 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 52A05E941CD2D3F500229518;
+					};
+				};
+			};
+			buildConfigurationList = 52A05E901CD2D3F500229518 /* Build configuration list for PBXProject "swift05-map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52A05E8C1CD2D3F500229518;
+			productRefGroup = 52A05E961CD2D3F500229518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A05E941CD2D3F500229518 /* swift05-map */,
+				52A05EA81CD2D3F500229518 /* swift05-mapTests */,
+				52A05EB31CD2D3F500229518 /* swift05-mapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A05E931CD2D3F500229518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A05EDA1CD2D98800229518 /* theater2.png in Resources */,
+				52ED5A7A1CD76C0200870153 /* TheHatefulEight.jpg in Resources */,
+				52A05ED61CD2D94000229518 /* movie.png in Resources */,
+				52A05EA31CD2D3F500229518 /* LaunchScreen.storyboard in Resources */,
+				52A05ED71CD2D94000229518 /* theater.png in Resources */,
+				52A05EDB1CD2D98800229518 /* movie2.png in Resources */,
+				52ED5A821CD8557D00870153 /* search2.png in Resources */,
+				52ED5A791CD76C0200870153 /* StarWars.jpg in Resources */,
+				52ED5A831CD8557D00870153 /* search.png in Resources */,
+				52ED5A7B1CD76C0200870153 /* TheRevenant.jpg in Resources */,
+				52A05EA01CD2D3F500229518 /* Assets.xcassets in Resources */,
+				52A05E9E1CD2D3F500229518 /* Main.storyboard in Resources */,
+				52ED5A781CD76C0200870153 /* MrRight.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EA71CD2D3F500229518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EB21CD2D3F500229518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A05E911CD2D3F500229518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ED5A851CD856F000870153 /* ProductVO.swift in Sources */,
+				52A05ED11CD2D60600229518 /* TheaterListCell.swift in Sources */,
+				52A05EC91CD2D47A00229518 /* TestData.swift in Sources */,
+				52ED5A7F1CD76F6900870153 /* MovieListCell2.swift in Sources */,
+				52ED5A891CD858C500870153 /* ProductSearchViewController.swift in Sources */,
+				52A05E9B1CD2D3F500229518 /* ViewController.swift in Sources */,
+				52A05EDD1CD2DC1B00229518 /* MovieListViewController.swift in Sources */,
+				52A05EDF1CD2DC4200229518 /* TheaterListViewController.swift in Sources */,
+				52A05ECB1CD2D48600229518 /* MovieListCell.swift in Sources */,
+				52ED5A871CD856F800870153 /* ProductListCell.swift in Sources */,
+				52A05E991CD2D3F500229518 /* AppDelegate.swift in Sources */,
+				52A05ECD1CD2D48C00229518 /* MovieVO.swift in Sources */,
+				52ED5A7D1CD76EA100870153 /* MovieListViewController2.swift in Sources */,
+				52A05ECF1CD2D54400229518 /* TheaterVO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EA51CD2D3F500229518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A05EAE1CD2D3F500229518 /* swift05_mapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A05EB01CD2D3F500229518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A05EB91CD2D3F500229518 /* swift05_mapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52A05EAB1CD2D3F500229518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A05E941CD2D3F500229518 /* swift05-map */;
+			targetProxy = 52A05EAA1CD2D3F500229518 /* PBXContainerItemProxy */;
+		};
+		52A05EB61CD2D3F500229518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A05E941CD2D3F500229518 /* swift05-map */;
+			targetProxy = 52A05EB51CD2D3F500229518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52A05E9C1CD2D3F500229518 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A05E9D1CD2D3F500229518 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52A05EA11CD2D3F500229518 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A05EA21CD2D3F500229518 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52A05EBB1CD2D3F500229518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52A05EBC1CD2D3F500229518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A05EBE1CD2D3F500229518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift05-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52A05EBF1CD2D3F500229518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift05-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52A05EC11CD2D3F500229518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "swift05-mapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-mapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift05-map.app/swift05-map";
+			};
+			name = Debug;
+		};
+		52A05EC21CD2D3F500229518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "swift05-mapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-mapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift05-map.app/swift05-map";
+			};
+			name = Release;
+		};
+		52A05EC41CD2D3F500229518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "swift05-mapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "swift05-map";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		52A05EC51CD2D3F500229518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "swift05-mapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftbook.swift05-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "swift05-map";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A05E901CD2D3F500229518 /* Build configuration list for PBXProject "swift05-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A05EBB1CD2D3F500229518 /* Debug */,
+				52A05EBC1CD2D3F500229518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A05EBD1CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A05EBE1CD2D3F500229518 /* Debug */,
+				52A05EBF1CD2D3F500229518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A05EC01CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-mapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A05EC11CD2D3F500229518 /* Debug */,
+				52A05EC21CD2D3F500229518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A05EC31CD2D3F500229518 /* Build configuration list for PBXNativeTarget "swift05-mapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A05EC41CD2D3F500229518 /* Debug */,
+				52A05EC51CD2D3F500229518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52A05E8D1CD2D3F500229518 /* Project object */;
+}
