@@ -145,17 +145,187 @@ var concatStrings = function (a, b, c) {
 }
 var concateABC = concatStrings("a", "b", "c")
 console.log(`concateABC : ${concateABC}`)
-var concateAB = concatStrings("a", "b")
-console.log(`concateAB : ${concateAB}`)
+// var concateAB = concatStrings("a", "b")
+// console.log(`concateAB : ${concateAB}`)
 
-var concatStrings2 = function (a: string, b: string, c?: string) {
-    return a + b + c
+function concatStrings2 (a: string, b: string, c?: string) {
+    return a + b + c 
 }
 var concatABC2 = concatStrings2("a", "b", "c")
 console.log(`concatABC2 : ${concatABC2}`)
 var concatAB2 = concatStrings2("a", "b")
 console.log(`concatAB2 : ${concatAB2}`)
 
+// 기본인자 (default parameters)
+function concatStringDefault(
+    a: string,
+    b: string,
+    c: string = "c"
+) {
+    return a + b + c
+}
+var defaultConcat = concatStringDefault("a", "b")
+console.log(`defaultConcat : ${defaultConcat}`)
 
+// 나머지 인자 (rast parameters)
+function testArguments() {
+    if(arguments.length > 0) {
+        for (var i=0; i<arguments.length; i++) {
+            console.log(`argument[${i}] = ${arguments[i]}`)
+        }
+    }
+}
+// testArguments(1,2,3)
+// testArguments("firstArg")
 
+function testArguments2(... argArray: number[]) {
+    if(argArray.length > 0) {
+        for (var i=0; i<argArray.length; i++) {
+            console.log(`argument[${i}] = ${argArray[i]}`)
+        }
+    }
+}
+testArguments2(1,2,3)
+testArguments2(1)
+
+function testArguments3(str: string, ... argArray: number[]) {
+    console.log(`first arg = ${str}`)
+    if(argArray.length > 0) {
+        for (var i=0; i<argArray.length; i++) {
+            console.log(`argument[${i}] = ${argArray[i]}`)
+        }
+    }
+}
+testArguments3("a",1,2,3)
+testArguments3("b")
+
+// 함수 콜백
+var callbackFunction = function(text) {
+    console.log(`insite callbackFunction ${text}`)
+}
+function doSomethingWithCallback(initialText, callback) {
+    console.log(`inside doSomethingWithCallback ${initialText}`)
+    if (typeof callback === "function")
+        callback(initialText)
+    else 
+        console.log(`${initialText} is not a function!`)
+}
+doSomethingWithCallback('myText', callbackFunction)
+doSomethingWithCallback('myText', 'two')
+
+// 함수 시그니처
+function doSomethingWithCallbackSigniture(
+    initialText: string,
+    callback: (initialText: string) => void
+) {
+    console.log(`inside doSomethingWithCallback ${initialText}`)
+    callback(initialText)
+}
+doSomethingWithCallbackSigniture('myText', callbackFunction)
+// doSomethingWithCallbackSigniture('myText', 'two')
+
+// 함수 오버로드
+function add(a, b) {
+    return a + b
+}
+console.log(`add(1,2) = ${add(1,2)}`)
+console.log(`add("1","2") = ${add("1","2")}`)
+
+function add2(a: string, b: string): string;
+function add2(a: number, b: number): number;
+function add2(a: any, b:any): any {
+    return a + b
+}
+console.log(`add2(1,2) = ${add2(1,2)}`)
+console.log(`add2("1","2") = ${add2("1","2")}`)
+
+// 공용체(Union) => 2개 이상의 타입을 조합하는 표현식
+var unionType : string | number;
+unionType = 1
+console.log(`unionType : ${unionType}`)
+unionType = "text"
+console.log(`unionType : ${unionType}`)
+
+// 타입가드
+// function addWithUnion(
+//     arg1: string | number,
+//     arg2: string | number
+// ) {
+//     return arg1 + arg2
+// }
+
+function addWithTypeGuard(
+    arg1: string | number,
+    arg2: string | number
+) : string | number {
+    if (typeof arg1 === "string") {
+        console.log('first arg is a string')
+        return arg1 + arg2
+    }
+    if (typeof arg1 === "number" && typeof arg2 === "number") {
+        console.log('both args are numbers')
+        return arg1 + arg2
+    }
+    console.log('default return')
+    return arg1.toString() + arg2.toString()
+}
+console.log(addWithTypeGuard(1,2))
+console.log(addWithTypeGuard("1","2"))
+console.log(addWithTypeGuard("1",3))
+console.log(addWithTypeGuard(1,"3"))
+
+// 타입 별명
+type StringOrNumber = string | number
+function addWithAlias(
+    arg1: StringOrNumber,
+    arg2: StringOrNumber,
+): StringOrNumber {
+    return arg1.toString() + arg2.toString()
+}
+console.log(addWithAlias(1,2))
+console.log(addWithAlias("1","2"))
+
+type CallbackWithString = (string) => void
+function usingCallbackWithString(
+    callback: CallbackWithString
+) {
+    callback("this is a string!")
+}
+function callbackTemp(text: string) {
+    console.log(text)
+}
+usingCallbackWithString(callbackTemp)
+
+// Null, undefined
+function testUndef(text) {
+    console.log(`testUndef parameter : ${text}`)
+}
+// testUndef()
+testUndef(null)
+testUndef("a")
+
+function testUndef2(text: null | number) {
+    console.log(`testUndef2 parameter : ${text}`)
+}
+// testUndef2()
+testUndef2(null)
+// testUndef2("1")
+testUndef2(2)
+
+let x : number |  undefined
+x = 1
+x = undefined
+x = null
+
+// 객체 나머지, 전개 (object rest and spread)
+let firstObj = { id: 1, name: "firstObj" }
+let secondObj = { ...firstObj }
+console.log(`secondObj.id = ${secondObj.id}`)
+console.log(`secondObj.name = ${secondObj.name}`)
+
+let nameObj = { name: "nameObj" }
+let idObj = { id: 2 }
+let obj3 = { ...nameObj, ...idObj }
+console.log(`obj3.id = ${obj3.id}`)
+console.log(`obj3.name = ${obj3.name}`)
 
