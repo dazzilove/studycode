@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "프로그램 시작",
+            "program": "${file}"
+            // "program":"${workspaceRoot}/temp/hello.js",
+            // "sourceMaps": true
+        },
+        {
+            "name": "launch chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file://${workspaceRoot}/ch01/index.html",
+            "runtimeArgs": [
+                "--new-window",
+                "--remote-debugging-port=9222"
+            ],
+            "sourceMaps": true,
+            "trace": true
+        }
+    ]
+}
