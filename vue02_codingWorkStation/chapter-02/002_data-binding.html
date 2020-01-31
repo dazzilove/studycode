@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Vue.js 애완용품샵</title>
+        <script src="assets/js/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1 v-text="sitename"></h1>
+                <div>Welcom to {{sitename}}</div>
+            </header>
+        </div>
+
+        <script type="text/javascript">
+            var webstore = new Vue({
+                el: '#app',
+                data: {
+                    sitename: 'Vue.js 애완용품샵'
+                }
+            });
+        </script>
+    </body>
+</html>
