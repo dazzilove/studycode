@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="assets/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <my-component></my-component>
+            <my-component></my-component>
+            <my-component></my-component>
+        </div>
+        <script>
+            const Component = {
+                template: '<div><button v-on:click="counter+=1">{{counter}}</button></div>',
+                data() {
+                    return {
+                        counter: 0
+                    }
+                }
+            }
+            new Vue({
+                el: '#app',
+                components: {'myComponent': Component},
+                data() {
+                    return {
+                        message: ''
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

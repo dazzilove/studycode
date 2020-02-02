@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div>{{counter}}</div>
+            <button v-on:click="incrementCounter">카운터 증가</button>
+            <my-component :my-counter.sync="counter"></my-component>
+        </div>
+        <script>
+            const MyComponent = {
+                template: `<div>
+                    <button v-on:click="childIncrementCounter">자식으로부터 증가 - 부모의 변수값을 직접 업데이트</button>
+                </div>`,
+                methods: {
+                    childIncrementCounter() {
+                        console.log('자식 호출. 부모의 변수값을 직접 업데이트');
+                        this.$emit('update:myCounter', this.myCounter+1);
+                    }
+                },
+                props: ['my-counter']
+            };
+
+            new Vue({
+                el: '#app',
+                components: {'my-component': MyComponent},
+                data() {
+                    return {
+                        counter: 0
+                    }
+                },
+                methods: {
+                    incrementCounter() {
+                        this.counter++;
+                    }
+                },
+                components: {'my-component': MyComponent}
+            });
+        </script>
+    </body>
+</html>

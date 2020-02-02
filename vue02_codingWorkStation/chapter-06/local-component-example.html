@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="assets/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <my-component></my-component>
+        </div>
+        <script>
+            var Component = {
+                template: '<div>안녕, 지역 컴포넌트로부터...</div>'
+            }
+            new Vue({
+                el: '#app',
+                components: {'myComponent': Component}
+            });
+        </script>
+    </body>
+</html>
