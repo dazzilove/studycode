@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <book-component :books="books">
+                <h1 slot="header">{{header}}</h1>
+                <template slot="book" slot-scope="props">
+                    <h2>
+                        <i>'{{props.book.title}}'</i> by: {{props.book.author}}<small></small>
+                    </h2>
+                </template>
+            </book-component>
+        </div>
+        <script>
+            const BookComponent = {
+                template: `
+                    <div>
+                        <slot name="header"></slot>
+                        <slot name="book" v-for="book in books" :book="book"></slot>
+                    </div>
+                `,
+                props: ['books']
+            }
+
+            new Vue({
+                el: '#app',
+                components: {'book-component': BookComponent},
+                data() {
+                    return {
+                        header: '책 목록',
+                        books: [
+                            {author: 'John Smith', title: 'Best Of Times'},
+                            {author: 'Jane Doe', title: 'Go West Young Man'},
+                            {author: 'Avery Katx', title: 'The Life And Times Of Avery'}
+                        ]
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

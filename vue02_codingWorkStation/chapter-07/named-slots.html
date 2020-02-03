@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <form-component>
+                <h1>{{header}}</h1>
+                <label for="title" slot="titleSlot">{{titleLabel}}</label>
+                <label for="author" slot="authorSlot">{{authorLabel}}</label>
+            </form-componen>
+        </div>
+        <script>
+            const FormComponent = {
+                template: `
+                    <div>
+                        <form>
+                            <slot></slot>
+                            <div>
+                                <slot name="titleSlot"></slot> : <input type="text" id="title" />
+                            </div>
+                            <div>
+                                <slot name="authorSlot"></slot> : <input type="text" id="author" />
+                            </div>
+                            <button>제출하기</button>
+                        </form>
+                    </div>
+                `,
+                props: ['title', 'author']
+            }
+
+            new Vue({
+                el: '#app',
+                components: {'form-component': FormComponent},
+                data() {
+                    return {
+                        titleLabel: '제목',
+                        authorLabel: '저자',
+                        pageLength: '',
+                        header: '책 저자 폼'
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
